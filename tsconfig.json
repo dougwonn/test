@@ -13,19 +13,18 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".", 
-    "paths": {
-      "@/*": ["src/*"],
-      "@/models/*": ["src/lib/database/models/*"],
-      "@/schemas/*": ["src/lib/schemas/*"],
-      "@/repositories/*": ["src/lib/database/repository/*"],
-      "@/errors/*": ["src/lib/errors/*"]
-    },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/models/*": ["./src/lib/database/models/*"],
+      "@/schemas/*": ["./src/lib/schemas/*"],
+      "@/repositories/*": ["./src/lib/database/repository/*"],
+      "@/errors/*": ["./src/lib/errors/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
